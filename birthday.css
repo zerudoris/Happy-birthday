@@ -1,0 +1,170 @@
+body
+{
+	min-height: 100vh;
+	background: #0c192c;
+}
+
+.container
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.bubbles
+{
+	position: relative;
+	display: flex; 
+}
+
+.bubbles span
+{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	background: #86E5FF;
+	margin: 0 4px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px #86E5FF44, 
+	0 0 50px #86E5FF,
+	0 0 100px #86E5FF;
+	animation: animate 15s linear infinite;
+	animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(1)
+{
+	background: #C85C8E;
+	box-shadow: 0 0 0 10px #C85C8E44, 
+	0 0 50px #C85C8E,
+	0 0 100px #C85C8E;
+}
+
+.bubbles span:nth-child(2)
+{
+	background: #FFEA20;
+	box-shadow: 0 0 0 10px #FFEA2044, 
+	0 0 50px #FFEA20,
+	0 0 100px #FFEA20;
+}
+
+.bubbles span:nth-child(3)
+{
+	background: #FDFDBD;
+	box-shadow: 0 0 0 10px #FDFDBD44, 
+	0 0 50px #FDFDBD,
+	0 0 100px #FDFDBD;
+}
+
+.bubbles span:nth-child(4)
+{
+	background: #FFEA20;
+	box-shadow: 0 0 0 10px #FFEA2044, 
+	0 0 50px #FFEA20,
+	0 0 100px #FFEA20;
+}
+
+.bubbles span:nth-child(5)
+{
+	background: #D58BDD;
+	box-shadow: 0 0 0 10px #D58BDD44, 
+	0 0 50px #D58BDD,
+	0 0 100px #D58BDD;
+}
+
+.bubbles span:nth-child(6)
+{
+	background: #CD0404;
+	box-shadow: 0 0 0 10px #CD040444, 
+	0 0 50px #CD0404,
+	0 0 100px #CD0404;
+}
+
+.bubbles span:nth-child(7)
+{
+	background: #939B62;
+	box-shadow: 0 0 0 10px #939B6244, 
+	0 0 50px #939B62,
+	0 0 100px #939B62;
+}
+
+.bubbles span:nth-child(8)
+{
+	background: #FD841F;
+	box-shadow: 0 0 0 10px #FD841F44, 
+	0 0 50px #FD841F,
+	0 0 100px #FD841F;
+}
+
+
+
+
+@keyframes animate
+{
+	0%
+	{
+		transform: translateY(100vh) scale(0);
+	}
+	
+	100%
+	{
+		transform: translateY(10px) scale(1);
+	}
+}
+
+
+
+@keyframes animate
+{
+	0%
+	{
+		transform: translateY(100vh) scale(0);
+	}
+	
+	100%
+	{
+		transform: translateY(10px) scale(1);
+	}
+}
+
+
+.word
+{
+	 width: 0px;
+  height: 0px;
+  background: rgba(89, .5);
+  position: center;
+}
+
+h3
+{
+	
+	width: 50vh;
+	margin-bottom: -20px;
+	text-align: justify;
+	margin-left: 5px;
+	color: #F5EDCE;
+	font-size: 16px;
+
+}
+
+h2
+{
+	
+	width: 50vh;
+	margin-bottom: -20px;
+	color: #F5EDCE;
+	text-align: center;
+	margin-left: -5px;
+}
+
+p { 
+	margin-bottom: 20px;
+	width: 50vh;
+	text-align: justify;
+	margin-left: 5px;
+	color: #F5EDCE;
+	font-size: 13px;
+}
+
